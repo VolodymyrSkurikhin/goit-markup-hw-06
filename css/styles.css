@@ -211,7 +211,8 @@ img {
   color: var(--white-color);
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
-  border-color: var(--accent-color);
+  /* border-color: var(--accent-color); */
+  border: none;
   margin-top: 30px;
   min-width: 200px;
   padding: 10px 32px;
@@ -870,6 +871,9 @@ img {
 }
 .modal-form-accept-label:hover .check-icon-thumb,
 .modal-form-accept-label:focus .check-icon-thumb {
+  border-color: var(--accent-color);
+}
+.accept-checkbox:focus + .modal-form-accept-label .check-icon-thumb {
   border-color: var(--accent-color);
 }
 .modal-form-accept-link {
